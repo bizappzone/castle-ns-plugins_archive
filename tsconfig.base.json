@@ -33,7 +33,19 @@
       "@bizappzone-castle-ui-ns/baz-language": ["packages/baz-language/index.d.ts"],
       "@bizappzone-castle-ui-ns/baz-theme": ["packages/baz-theme/index.d.ts"],
       "@bizappzone-castle-ui-ns/baz-body": ["packages/baz-body/index.d.ts"],
-      "@bizappzone-castle-ui-ns/baz-text": ["packages/baz-text/index.d.ts"]
+      "@bizappzone-castle-ui-ns/baz-text": ["packages/baz-text/index.d.ts"],
+      "@bizappzone/castle-ui-ns-body/angular": ["packages/baz-body/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-button/angular": ["packages/baz-button/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-footer/angular": ["packages/baz-footer/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-header/angular": ["packages/baz-header/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-con/angular": ["packages/baz-icon/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-input/angular": ["packages/baz-input/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-language/angular": ["packages/baz-language/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-layout/angular": ["packages/baz-layout/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-search/angular": ["packages/baz-search/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-splash/angular": ["packages/baz-splash/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-text/angular": ["packages/baz-text/angular/index.ts"],
+      "@bizappzone/castle-ui-ns-theme/angular": ["packages/baz-theme/angular/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
