@@ -1,0 +1,65 @@
+{
+  "name": "baz-splash",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "packages/baz-splash",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/packages/baz-splash",
+        "tsConfig": "packages/baz-splash/tsconfig.json",
+        "packageJson": "packages/baz-splash/package.json",
+        "main": "packages/baz-splash/index.d.ts",
+        "assets": [
+          "packages/baz-splash/*.md",
+          "packages/baz-splash/index.d.ts",
+          "LICENSE",
+          {
+            "glob": "**/*",
+            "input": "packages/baz-splash/platforms/",
+            "output": "./platforms/"
+          }
+        ],
+        "dependsOn": [
+          {
+            "target": "build.all",
+            "projects": "dependencies"
+          }
+        ]
+      }
+    },
+    "build.all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["node tools/scripts/build-finish.ts baz-splash"],
+        "parallel": false
+      },
+      "outputs": ["dist/packages/baz-splash"],
+      "dependsOn": [
+        {
+          "target": "build.all",
+          "projects": "dependencies"
+        },
+        {
+          "target": "build",
+          "projects": "self"
+        }
+      ]
+    },
+    "focus": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx g @nativescript/plugin-tools:focus-packages baz-splash"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/baz-splash/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,5 +1,5 @@
 {
-  "npmScope": "nativescript",
+  "npmScope": "bizappzone-castle-ui-ns",
   "affected": {
     "defaultBase": "master"
   },

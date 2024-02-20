@@ -20,7 +20,20 @@
       }
     ],
     "paths": {
-      "@demo/shared": ["tools/demo/index.ts"]
+      "@demo/shared": ["tools/demo/index.ts"],
+      "@bizappzone-castle-ui-ns/*": ["packages/*"],
+      "@bizappzone-castle-ui-ns/baz-button": ["packages/baz-button/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-layout": ["packages/baz-layout/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-input": ["packages/baz-input/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-search": ["packages/baz-search/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-icon": ["packages/baz-icon/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-header": ["packages/baz-header/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-splash": ["packages/baz-splash/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-footer": ["packages/baz-footer/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-language": ["packages/baz-language/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-theme": ["packages/baz-theme/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-body": ["packages/baz-body/index.d.ts"],
+      "@bizappzone-castle-ui-ns/baz-text": ["packages/baz-text/index.d.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

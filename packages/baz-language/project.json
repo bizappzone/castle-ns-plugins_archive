@@ -1,0 +1,65 @@
+{
+  "name": "baz-language",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "packages/baz-language",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/packages/baz-language",
+        "tsConfig": "packages/baz-language/tsconfig.json",
+        "packageJson": "packages/baz-language/package.json",
+        "main": "packages/baz-language/index.d.ts",
+        "assets": [
+          "packages/baz-language/*.md",
+          "packages/baz-language/index.d.ts",
+          "LICENSE",
+          {
+            "glob": "**/*",
+            "input": "packages/baz-language/platforms/",
+            "output": "./platforms/"
+          }
+        ],
+        "dependsOn": [
+          {
+            "target": "build.all",
+            "projects": "dependencies"
+          }
+        ]
+      }
+    },
+    "build.all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["node tools/scripts/build-finish.ts baz-language"],
+        "parallel": false
+      },
+      "outputs": ["dist/packages/baz-language"],
+      "dependsOn": [
+        {
+          "target": "build.all",
+          "projects": "dependencies"
+        },
+        {
+          "target": "build",
+          "projects": "self"
+        }
+      ]
+    },
+    "focus": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx g @nativescript/plugin-tools:focus-packages baz-language"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/baz-language/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

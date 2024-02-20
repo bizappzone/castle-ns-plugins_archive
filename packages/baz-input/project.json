@@ -1,0 +1,65 @@
+{
+  "name": "baz-input",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "packages/baz-input",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/packages/baz-input",
+        "tsConfig": "packages/baz-input/tsconfig.json",
+        "packageJson": "packages/baz-input/package.json",
+        "main": "packages/baz-input/index.d.ts",
+        "assets": [
+          "packages/baz-input/*.md",
+          "packages/baz-input/index.d.ts",
+          "LICENSE",
+          {
+            "glob": "**/*",
+            "input": "packages/baz-input/platforms/",
+            "output": "./platforms/"
+          }
+        ],
+        "dependsOn": [
+          {
+            "target": "build.all",
+            "projects": "dependencies"
+          }
+        ]
+      }
+    },
+    "build.all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["node tools/scripts/build-finish.ts baz-input"],
+        "parallel": false
+      },
+      "outputs": ["dist/packages/baz-input"],
+      "dependsOn": [
+        {
+          "target": "build.all",
+          "projects": "dependencies"
+        },
+        {
+          "target": "build",
+          "projects": "self"
+        }
+      ]
+    },
+    "focus": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx g @nativescript/plugin-tools:focus-packages baz-input"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/baz-input/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

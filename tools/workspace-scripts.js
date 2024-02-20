@@ -55,12 +55,96 @@ module.exports = {
       },
     },
     '⚙️': {
-      script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-      description: '_____________  @nativescript/*  _____________',
+      script: `npx cowsay "@bizappzone-castle-ui-ns/* packages will keep your ⚙️ cranking"`,
+      description: '_____________  @bizappzone-castle-ui-ns/*  _____________',
     },
     // packages
     // build output is always in dist/packages
-    '@nativescript': {
+    '@bizappzone-castle-ui-ns': {
+      // @bizappzone-castle-ui-ns/baz-button
+      'baz-button': {
+        build: {
+          script: 'nx run baz-button:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-button: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-layout
+      'baz-layout': {
+        build: {
+          script: 'nx run baz-layout:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-layout: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-input
+      'baz-input': {
+        build: {
+          script: 'nx run baz-input:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-input: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-search
+      'baz-search': {
+        build: {
+          script: 'nx run baz-search:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-search: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-icon
+      'baz-icon': {
+        build: {
+          script: 'nx run baz-icon:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-icon: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-header
+      'baz-header': {
+        build: {
+          script: 'nx run baz-header:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-header: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-splash
+      'baz-splash': {
+        build: {
+          script: 'nx run baz-splash:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-splash: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-footer
+      'baz-footer': {
+        build: {
+          script: 'nx run baz-footer:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-footer: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-language
+      'baz-language': {
+        build: {
+          script: 'nx run baz-language:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-language: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-theme
+      'baz-theme': {
+        build: {
+          script: 'nx run baz-theme:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-theme: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-body
+      'baz-body': {
+        build: {
+          script: 'nx run baz-body:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-body: Build',
+        },
+      },
+      // @bizappzone-castle-ui-ns/baz-text
+      'baz-text': {
+        build: {
+          script: 'nx run baz-text:build.all',
+          description: '@bizappzone-castle-ui-ns/baz-text: Build',
+        },
+      },
       'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
@@ -71,8 +155,56 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
+      'baz-button': {
+        script: 'nx run baz-button:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-button',
+      },
+      'baz-layout': {
+        script: 'nx run baz-layout:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-layout',
+      },
+      'baz-input': {
+        script: 'nx run baz-input:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-input',
+      },
+      'baz-search': {
+        script: 'nx run baz-search:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-search',
+      },
+      'baz-icon': {
+        script: 'nx run baz-icon:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-icon',
+      },
+      'baz-header': {
+        script: 'nx run baz-header:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-header',
+      },
+      'baz-splash': {
+        script: 'nx run baz-splash:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-splash',
+      },
+      'baz-footer': {
+        script: 'nx run baz-footer:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-footer',
+      },
+      'baz-language': {
+        script: 'nx run baz-language:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-language',
+      },
+      'baz-theme': {
+        script: 'nx run baz-theme:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-theme',
+      },
+      'baz-body': {
+        script: 'nx run baz-body:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-body',
+      },
+      'baz-text': {
+        script: 'nx run baz-text:focus',
+        description: 'Focus on @bizappzone-castle-ui-ns/baz-text',
+      },
       reset: {
-        script: 'nx g @nativescript/plugin-tools:focus-packages',
+        script: 'nx g @bizappzone-castle-ui-ns/plugin-tools:focus-packages',
         description: 'Reset Focus',
       },
     },

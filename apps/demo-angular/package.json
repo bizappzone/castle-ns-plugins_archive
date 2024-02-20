@@ -1,7 +1,19 @@
 {
   "main": "./src/main.ts",
   "dependencies": {
-    "@nativescript/core": "file:../../node_modules/@nativescript/core"
+    "@nativescript/core": "file:../../node_modules/@nativescript/core",
+    "@bizappzone-castle-ui-ns/baz-button": "file:../../dist/packages/baz-button",
+    "@bizappzone-castle-ui-ns/baz-layout": "file:../../dist/packages/baz-layout",
+    "@bizappzone-castle-ui-ns/baz-input": "file:../../dist/packages/baz-input",
+    "@bizappzone-castle-ui-ns/baz-search": "file:../../dist/packages/baz-search",
+    "@bizappzone-castle-ui-ns/baz-icon": "file:../../dist/packages/baz-icon",
+    "@bizappzone-castle-ui-ns/baz-header": "file:../../dist/packages/baz-header",
+    "@bizappzone-castle-ui-ns/baz-splash": "file:../../dist/packages/baz-splash",
+    "@bizappzone-castle-ui-ns/baz-footer": "file:../../dist/packages/baz-footer",
+    "@bizappzone-castle-ui-ns/baz-language": "file:../../dist/packages/baz-language",
+    "@bizappzone-castle-ui-ns/baz-theme": "file:../../dist/packages/baz-theme",
+    "@bizappzone-castle-ui-ns/baz-body": "file:../../dist/packages/baz-body",
+    "@bizappzone-castle-ui-ns/baz-text": "file:../../dist/packages/baz-text"
   },
   "devDependencies": {
     "@nativescript/android": "~8.6.0",

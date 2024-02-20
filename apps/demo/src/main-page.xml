@@ -6,6 +6,18 @@
     <ScrollView class="h-full">
       <StackLayout>
         <Button text="add a package first" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-button" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-layout" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-input" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-search" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-icon" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-header" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-splash" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-footer" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-language" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-theme" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-body" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+<Button text="baz-text" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
       </StackLayout>
     </ScrollView>
   </StackLayout>

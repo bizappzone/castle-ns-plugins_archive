@@ -1,30 +1,15 @@
-**=== IMPORTANT**
-
-# :rotating_light: Important - read first!
-
-**Use this template on GitHub:**
-1. Hit the "Use this template" button
-2. Follow GitHub instructions (set repo name, visibility, description) & clone your new repo
-3. Setup workspace: `npm run setup`
-4. Configure your npm scope: `npm run config`
-
-**Use this template outside of GitHub:**
-
-1. Download a zip of this repo
-2. Unzip and name the folder appropriately (perhaps the name of the npm scope you intend to manage here)
-3. Setup workspace: `npm run setup`
-4. Configure your npm scope: `npm run config`
-
----
-
-# @nativescript/\* plugins
-
-```
-npm run setup
-npm start
-```
-
-- @nativescript
+- [@bizappzone-castle-ui-ns/baz-body](packages/baz-body/README.md)
+- [@bizappzone-castle-ui-ns/baz-button](packages/baz-button/README.md)
+- [@bizappzone-castle-ui-ns/baz-footer](packages/baz-footer/README.md)
+- [@bizappzone-castle-ui-ns/baz-header](packages/baz-header/README.md)
+- [@bizappzone-castle-ui-ns/baz-icon](packages/baz-icon/README.md)
+- [@bizappzone-castle-ui-ns/baz-input](packages/baz-input/README.md)
+- [@bizappzone-castle-ui-ns/baz-language](packages/baz-language/README.md)
+- [@bizappzone-castle-ui-ns/baz-layout](packages/baz-layout/README.md)
+- [@bizappzone-castle-ui-ns/baz-search](packages/baz-search/README.md)
+- [@bizappzone-castle-ui-ns/baz-splash](packages/baz-splash/README.md)
+- [@bizappzone-castle-ui-ns/baz-text](packages/baz-text/README.md)
+- [@bizappzone-castle-ui-ns/baz-theme](packages/baz-theme/README.md)
 
 # How to use?
 
